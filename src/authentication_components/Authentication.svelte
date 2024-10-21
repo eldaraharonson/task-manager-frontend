@@ -63,20 +63,4 @@
   button:hover {
     background-color: #267acc; /* Slightly darker blue on hover */
   }
-
-  .signup {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 14px;
-  }
-
-  .signup a {
-    color: #3399ff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  .signup a:hover {
-    color: #267acc;
-  }
 </style>
