@@ -5,13 +5,17 @@
 
   let username = "";
   let password = "";
+  let email = "";
 </script>
 
 <div class="login-container">
   <h2>{title}</h2>
   <input type="text" placeholder="Username" bind:value={username} />
   <input type="password" placeholder="Password" bind:value={password} />
-  <button on:click={handleSubmit(event, username, password)}>Login</button>
+  {#if title === "Signup"}
+    <input type="email" placeholder="Email" bind:value={email} />
+  {/if}
+  <button on:click={handleSubmit(event, username, password)}>{title}</button>
   <div>{@html switchAuthentication}</div>
 </div>
 
